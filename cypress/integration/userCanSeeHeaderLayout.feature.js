@@ -5,9 +5,11 @@ describe("Linkedin interface", () => {
 
   it("renders header", () => {
     cy.get(".header").within(() => {
-      cy.get(".title").should("contain", "Test header");
-      cy.get(".header__left").should("contain", "");
-      cy.get(".header__rigth").should("contain", "");
+      cy.get(".header__left").within(() => {
+        cy.get("img").should("contain", "search");
+        cy.get(".header__search").should("contain", "SearIcon");
+      });
+      cy.get(".header__rigth").should("contain", "HeaderOption");
     });
   });
 });
