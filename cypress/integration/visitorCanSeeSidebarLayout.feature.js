@@ -26,12 +26,7 @@ describe("Linkedin sidebar", () => {
   });
   it("renders sidebar bottom", () => {
     cy.get(".sidebar__bottom").within(() => {
-        cy.get(".sidebar__recent").should("contain", "Recent");
-
-
-    })
-
-  })
-
-
+      cy.get(".sidebar__recent").should("contain", "Recent");
+    });
+  });
 });

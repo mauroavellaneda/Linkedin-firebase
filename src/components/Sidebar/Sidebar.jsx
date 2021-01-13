@@ -20,7 +20,7 @@ const Sidebar = () => {
         />
         <Avatar className="sidebar__avatar" />
         <h2 className="sidebar__name">Mauro Avellaneda</h2>
-        <h1 className="sidebar__email">mauroeavellaneda@gmail.com</h1>
+        <h4 className="sidebar__email">mauroeavellaneda@gmail.com</h4>
       </div>
       <div className="sidebar__stats">
         <div className="sidebar__stat">
