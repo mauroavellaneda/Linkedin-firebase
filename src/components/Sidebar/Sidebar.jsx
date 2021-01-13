@@ -14,12 +14,13 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="sidebar__top">
         <img
+          className="sidebar__img"
           src="https://images.unsplash.com/photo-1570005616859-784c0e1644c5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
           alt="cover"
         />
         <Avatar className="sidebar__avatar" />
-        <h2>Mauro Avellaneda</h2>
-        <h1>mauroeavellaneda@gmail.com</h1>
+        <h2 className="sidebar__name">Mauro Avellaneda</h2>
+        <h1 className="sidebar__email">mauroeavellaneda@gmail.com</h1>
       </div>
       <div className="sidebar__stats">
         <div className="sidebar__stat">
@@ -32,7 +33,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar__bottom">
-        <p>Recent</p>
+        <p className="sidebar__recent">Recent</p>
         {recentItem("reactjs")}
         {recentItem("frontend")}
         {recentItem("developer")}
