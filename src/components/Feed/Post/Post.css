@@ -22,6 +22,13 @@
   font-size: 15px;
 }
 .post__buttons {
-    display: flex;
-    
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  min-height: 40px;
+  padding: 4px 8px;
 }
