@@ -33,7 +33,7 @@ const Feed = () => {
       description: "Testing",
       message: input,
       photoUrl: "",
-      timestamp: firebase.firestore.fieldValue.serverTimestamp(),
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
   };
 
@@ -69,14 +69,15 @@ const Feed = () => {
           />
         </div>
       </div>
-      {posts.map((post) => (
-        <Post />
+      {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
+        <Post
+          key={id}
+          name={name}
+          description={description}
+          message={message}
+          photoUrl={photoUrl}
+        />
       ))}
-      <Post
-        name="Mauro Avellaneda"
-        description="This is a test"
-        message="and its working"
-      />
     </div>
   );
 };
