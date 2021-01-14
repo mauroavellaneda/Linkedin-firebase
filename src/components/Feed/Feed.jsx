@@ -6,6 +6,7 @@ import InputOption from "./InputOption";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
+import Post from "./Post/Post";
 
 const Feed = () => {
   return (
@@ -34,6 +35,11 @@ const Feed = () => {
           />
         </div>
       </div>
+      <Post
+        name="Mauro Avellaneda"
+        description="This is a test"
+        message="and its working"
+      />
     </div>
   );
 };
